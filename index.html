@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+<title >
+    Student Information 
+</title>
+<style>
+
+table, th , td { border: 2px solid black }
+
+body {
+  background-image: url('oof.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+</style>
+
+ 
+
+</head>
+<body align = "center">
+
+<table style = "width: 50%" bgcolor = "beige" align = "center">
+ <h1 >
+   <B><U>STUDENT  INFORMATION  FORM</B></U> </h1>
+ 
+ </h1>
+</header>
+<a href="index2.html" align = "center"    
+ box-sizing: border-box; >Click here to view the gallery</a>
+<section>
+ <h4>
+ Fill the form 
+ </h4>
+ 
+ <p> Enter student information below: </p>
+ 
+<form >
+    
+      
+ <input type="file" accept="image/*" onchange="loadFile(event) ">
+
+ <input type="submit"  value="Upload">
+ <p><img id="output" width="200"/></p>
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output');
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script>
+</form>
+<br>
+ <form>
+ <label for="fname" >First name:</label><br>
+ <input type="text" ><br>
+  <label for="fname" >Last name:</label><br>
+ <input type="text" ><br>
+  <label for="dob">Date of Birth:</label><br>
+ <input type="text" ><br>
+ 
+ </form>
+ <br>
+  
+ <th> Board </th> 
+ <th> Marks </th>
+ <th> University </th>
+
+ <tr>
+ <td>
+ SSC
+ </td>
+  <td>
+  <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+  <td>
+  <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ ICSE
+ </td>
+ <td>
+ <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+  <td>
+  <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ CBSE
+ </td>
+  <td>
+  <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+  <td>
+  <form>
+    
+ <input type="text" ><br>
+ </form>
+ </td>
+ </tr>
+
+ </table>
+ <br>
+ 
+ <form>
+<input type="button" value="SUBMIT" bgcolor = "green">
+<br>
+</form>
+</section>
+<footer>
+  <font color="red" size="18">
+    DON'T FORGET TO SUBMIT THE <FORM></FORM>
+  </font>
+
+</footer>
+ </body>
+ 
+ </html>
+ 
